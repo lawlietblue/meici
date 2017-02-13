@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="css/common.css" type="text/css" />
         <link rel="stylesheet" type="text/css" href="css/font/iconfont.css">
         <link rel="stylesheet" href="css/main.css" type="text/css" />
+        <script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.js"></script>
+        <script src="js/common.js"></script>
     </head>
     <body>
         <div id="header">
@@ -21,9 +23,20 @@
                         <div>
                             <span>客服热线：4000-250-630</span>
                         </div>
-                        <div>
+                        <div class="relative">
                             <span class="iconfont">&#xe6a0;</span>
                             关注我们
+                            <div class="focusme">
+                                <ul>
+                                    <li>
+                                        <a href="#"><img src="img/fou_sina.gif"></a>
+                                        <p>新浪微博</p>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/fou_wechat.gif"></a>
+                                        <p>美西微信</p>
+                                    </li>
+                            </div>
                         </div>
                         <div>
                             <span class="iconfont">&#xe6d1;</span>
@@ -45,10 +58,61 @@
                 </div>
             </div>
             <div class="main_nav">
-                <div class="headerbar_m">
+                <div class="clearfix">
                     <ul>
                         <li><a href="#">首页</a></li>
-                        <li><a href="#">新近单品</a></li>
+                        <li>
+                            <a href="#">新近单品</a>
+                            <div class="menu_m relative">
+                                <div class="menu_m_n clearfix">
+                                    <dl class="menu_m_s">
+                                        <dt><a href="#">今日上新</a></dt>
+                                        <dt><a href="#">昨日上新</a></dt>
+                                        <dt><a href="#">本周上新</a></dt>
+                                    </dl>
+                                    <dl class="menu_m_s">
+                                        <dt><a href="#">男仕 Mans</a></dt>
+                                        <dt><a href="#">包袋 Bags</a></dt>
+                                        <dt><a href="#">配饰 Accessories</a></dt>
+                                        <dt><a href="#">鞋履 Shoes</a></dt>
+                                        <dt><a href="#">服装 Clothes</a></dt>
+                                    </dl>
+                                    <dl class="menu_m_s">
+                                        <dt><a href="#">女士 Woman</a></dt>
+                                        <dt><a href="#">包袋 Bags</a></dt>
+                                        <dt><a href="#">配饰 Accessories</a></dt>
+                                        <dt><a href="#">鞋履 Shoes</a></dt>
+                                        <dt><a href="#">服装 Clothes</a></dt>
+                                    </dl>
+                                    <dl class="menu_m_s">
+                                        <dt><a href="#">今日推荐单品</a></dt>
+                                        <dd>
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><img src="img/mn1.jpg">
+                                                    <p>Saint Laurent 圣罗兰<br>2017早春新款 皮革 女士 斜挎包</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><img src="img/mn2.jpg">
+                                                    <p>Gucci 古驰<br>双G磨砂拼皮男仕运动休闲鞋</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><img src="img/mn3.jpg">
+                                                    <p>Joshua Sanders <br>牛皮 女士 乐福鞋</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="menu_m_b">
+                                    <a href="#">所有男仕新品</a>
+                                    <a href="#">所有女士新品</a>
+                                </div>
+                            </div>
+                        </li>
                         <li><a href="#">全球购</a><span></span></li>
                         <li><a href="#">女士</a></li>
                         <li><a href="#">男仕</a></li>
@@ -62,13 +126,18 @@
             </div>
         </div>
         <div id="main">
-            <div class="headerbar_m">
-                <ul>
+            <div class="headerbar_m relative">
+                <ul class="position">
+                    <li><a href="#"><img src="img/14867296811558428009.jpg"></a></li>
                     <li><a href="#"><img src="img/1486354512576040284.jpg"></a></li>
                     <li><a href="#"><img src="img/1486728373996230390.jpg"></a></li>
                     <li><a href="#"><img src="img/1486728382411855349.jpg"></a></li>
                     <li><a href="#"><img src="img/14864659951102716751.jpg"></a></li>
                     <li><a href="#"><img src="img/14867296811558428009.jpg"></a></li>
+                    <li><a href="#"><img src="img/1486354512576040284.jpg"></a></li>
+                </ul>
+                <span class="left_l"><</span>
+                <span class="right_r">></span>
             </div>
         </div>
         <div class="theme01 relative">
@@ -129,80 +198,150 @@
         <div class="m_hot_pro relative">
             <span class="cart_prew absolute"></span>
             <span class="cart_next absolute"></span>
-            <ul>
+            <ul class="absolute">
                 <li>
-                    <a>
-                        <img src="img/q-115233-1.jpg"/>
-                        <span>衣服</span>
-                    </a>
-                    <span class="status">已加入收藏</span>
-                </li>
-                <li>
-                    <a>
-                        <img src="img/q-049645-1.jpg"/>
-                        <span>衣服</span>
-                    </a>
-                    <span class="status">已加入收藏</span>
-                </li>
-                <li>
-                    <a>
-                        <img src="img/q-045078-1.jpg"/>
-                        <span>衣服</span>
-                    </a>
-                    <span class="status">已加入收藏</span>
-                </li>
-                <li>
-                    <a>
-                        <img src="img/q-044719-1.jpg"/>
-                        <span>衣服</span>
-                    </a>
-                    <span class="status">已加入收藏</span>
-                </li>
-                <li>
-                    <a>
-                        <img src="img/q-024840-1.jpg"/>
-                        <span>衣服</span>
-                    </a>
-                    <span class="status">已加入收藏</span>
-                </li>
-                <li>
-                    <a>
-                        <img src="img/q-116122-1.jpg"/>
-                        <span>衣服</span>
-                    </a>
-                    <span class="status">已加入收藏</span>
-                </li>
-                <li>
-                    <a>
+                    <a href="#">
                         <img src="img/q-115062-1.jpg"/>
                         <span>衣服</span>
                     </a>
                     <span class="status">已加入收藏</span>
                 </li>
                 <li>
-                    <a>
+                    <a href="#">
                         <img src="img/q-114811-1.jpg"/>
                         <span>衣服</span>
                     </a>
                     <span class="status">已加入收藏</span>
                 </li>
                 <li>
-                    <a>
+                    <a href="#">
                         <img src="img/q-114545-1.jpg"/>
                         <span>衣服</span>
                     </a>
                     <span class="status">已加入收藏</span>
                 </li>
                 <li>
-                    <a>
+                    <a href="#">
                         <img src="img/q-113847-1.jpg"/>
                         <span>衣服</span>
                     </a>
                     <span class="status">已加入收藏</span>
                 </li>
                 <li>
-                    <a>
+                    <a href="#">
                         <img src="img/q-112165-1.jpg"/>
+                        <span>衣服</span>
+                    </a>
+                    <span class="status">已加入收藏</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/q-115233-1.jpg"/>
+                        <span>衣服</span>
+                    </a>
+                    <span class="status">已加入收藏</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/q-049645-1.jpg"/>
+                        <span>衣服</span>
+                    </a>
+                    <span class="status">已加入收藏</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/q-045078-1.jpg"/>
+                        <span>衣服</span>
+                    </a>
+                    <span class="status">已加入收藏</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/q-044719-1.jpg"/>
+                        <span>衣服</span>
+                    </a>
+                    <span class="status">已加入收藏</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/q-024840-1.jpg"/>
+                        <span>衣服</span>
+                    </a>
+                    <span class="status">已加入收藏</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/q-116122-1.jpg"/>
+                        <span>衣服</span>
+                    </a>
+                    <span class="status">已加入收藏</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/q-115062-1.jpg"/>
+                        <span>衣服</span>
+                    </a>
+                    <span class="status">已加入收藏</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/q-114811-1.jpg"/>
+                        <span>衣服</span>
+                    </a>
+                    <span class="status">已加入收藏</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/q-114545-1.jpg"/>
+                        <span>衣服</span>
+                    </a>
+                    <span class="status">已加入收藏</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/q-113847-1.jpg"/>
+                        <span>衣服</span>
+                    </a>
+                    <span class="status">已加入收藏</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/q-112165-1.jpg"/>
+                        <span>衣服</span>
+                    </a>
+                    <span class="status">已加入收藏</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/q-115233-1.jpg"/>
+                        <span>衣服</span>
+                    </a>
+                    <span class="status">已加入收藏</span>
+                </li>
+                 <li>
+                    <a href="#">
+                        <img src="img/q-049645-1.jpg"/>
+                        <span>衣服</span>
+                    </a>
+                    <span class="status">已加入收藏</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/q-045078-1.jpg"/>
+                        <span>衣服</span>
+                    </a>
+                    <span class="status">已加入收藏</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/q-044719-1.jpg"/>
+                        <span>衣服</span>
+                    </a>
+                    <span class="status">已加入收藏</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/q-024840-1.jpg"/>
                         <span>衣服</span>
                     </a>
                     <span class="status">已加入收藏</span>

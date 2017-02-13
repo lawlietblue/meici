@@ -2,7 +2,7 @@
     float: left;
 }
 #main ul {
-    width: 4800px;
+    width: 6720px;
     overflow: hidden;
     margin: 10px 0;
 }
@@ -55,6 +55,7 @@
     width: 960px;
     margin: 0 auto;
     overflow: hidden;
+    height: 260px;
 }
 .m_hot_pro ul li {
     float: left;
@@ -63,7 +64,8 @@
     margin: 5px 16px;
 }
 .m_hot_pro ul {
-    width: 2112px;
+    width: 4032px;
+    left: -960px;
 }
 .m_hot_pro li span {
     display: block;
@@ -76,6 +78,7 @@
     border-right-color: black;
     top: 30%;
     cursor: pointer;
+    z-index: 1;
 }
 .cart_next {
     border: 8px solid transparent;
@@ -85,6 +88,7 @@
     top: 30%;
     cursor: pointer;
     right: 0;
+    z-index: 1;
 }
 
 .theme02 {
@@ -133,4 +137,7 @@
     border: none;
     color: #FFF;
     cursor: pointer;
+}
+.absolute {
+    position: absolute;
 }
