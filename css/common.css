@@ -38,7 +38,7 @@ a:hover {
 }
 .headerbar .headerbar_r {
     float: right;
-    padding: 9px 0;
+    padding: 9px 0 0 0;
 }
 .headerbar .headerbar_r div {
     float: left;
@@ -59,6 +59,9 @@ a:hover {
 .headerbar .headerbar_r span {
     font-size: 12px;
 }
+.headerbar .headerbar_r .num {
+    color: #8e0c3a;
+}
 .headerbar .headerbar_r b {
     border-left: 1px solid rgb(204, 204, 204);
     padding: 0 7px;
@@ -77,7 +80,7 @@ a:hover {
 .header_top img:nth-child(2) {
     margin: 40px 0 0 7px;
 }
-.header_top img:nth-child(3) {
+.header_top img.logo {
     margin: 27px 175px 0;
 }
 .header_top form {
@@ -222,25 +225,38 @@ a:hover {
     width: 22px;
     height: 23px;
 }
+.link li:nth-child(1) a:hover {
+    background-position:0 0;
+}
 .link li:nth-child(2) a{
     background: url(../img/foot_pic_s.jpg) no-repeat 0 -155px;
     width: 100px;
     height: 22px;
 }
+.link li:nth-child(2) a:hover {
+    background-position:0 -45px;
+}
 .link li:nth-child(3) a{
     background: url(../img/foot_pic_s.jpg) no-repeat 0 -133px;
     width: 66px;
     height: 22px;
+    margin-left: 40px;
 }
 .link li:nth-child(4) a{
     background: url(../img/foot_pic_s.jpg) no-repeat -182px -180px;
     width: 73px;
     height: 22px;
 }
+.link li:nth-child(4) a:hover {
+    background-position:-182px -70px;
+}
 .link li:nth-child(5) a{
     background: url(../img/foot_pic_s.jpg) no-repeat -66px -110px;
     width: 73px;
     height: 22px;
+}
+.link li:nth-child(5) a:hover {
+    background-position:-66px 0;
 }
 .link li:nth-child(6) a{
     background: #5a5a5a;
@@ -280,6 +296,21 @@ a:hover {
     display: none;
 }
 
+.focusme li {
+    float: left;
+    margin: 7px 15px;
+}
+.focusme ul {
+    width: 160px;
+    height: 60px;
+    background: #FFF;
+    border: 1px solid #ccc;
+    left: -96px;
+    top: 8px;
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+}
 .clearfix {
     width: 960px;
     margin: 0 auto;
@@ -380,4 +411,150 @@ a:hover {
 }
 #main div {
     height: 500px;
+}
+
+/*------------------------------------------关注-------------------*/
+.focusy {
+    cursor: default;
+}
+.focusy:hover span {
+    color: black;
+    font-weight: bold;
+}
+/*购物袋*/
+.headerbar .headerbar_r div.buy {
+    cursor: pointer;
+    padding-bottom: 8px;
+    padding-left: 8;
+    margin-left: 10px;
+    margin-top: -1px;
+    border: 1px solid #f4f4f4;
+    position: relative;
+    z-index: 1;
+}
+.headerbar .headerbar_r .buycar {
+    position: absolute;
+    right: 0;
+    top: 35px;
+    width: 275px;
+    padding: 30px 20px 27px 20px;
+    background: #FFF;
+    border: 1px solid #ccc;
+    text-align: center;
+    display: none;
+}
+
+/*清除浮动*/
+.clear {
+    clear: both;
+}
+
+/*固定的搜索*/
+#search_top {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: #FFF;
+    z-index: 999;
+    border-bottom: 1px solid #CCC;
+    display: none;
+}
+.lawliet {
+    width: 960px;
+    margin: 0 auto;
+}
+.lawliet > a {
+    float: left;
+    overflow: hidden;
+    height: 31px;
+    margin-top: 10px;
+}
+.lawliet > a img {
+    width: 200px;
+    margin-top: 7px;
+    margin-right: 50px;
+}
+.lawliet form {
+    float: left;
+    width: 600px;
+    height: 28px;
+    background: #FFF;
+    border: 2px solid #8e0c3a;
+    margin-top: 14px;
+    position: relative;
+}
+.lawliet form input {
+    float: left;
+    border: none;
+    outline: none;
+    height: 28px;
+    width: 562px;
+    padding-left: 10px;
+}
+.lawliet form button {
+    float: left;
+    border: none;
+    outline: none;
+    width: 28px;
+    height: 28px;
+    background: url(../img/searchBtn2.gif) no-repeat;
+}
+.lawliet > div {
+    float: right;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.lawliet > div span {
+    color: #8e0c3a;
+}
+.lawliet > div img {
+    vertical-align: middle;
+}
+.lawliet_box {
+    position: absolute;
+    width: 960px;
+    background: #FFF;
+    border: 1px solid #ccc;
+    border-top: none;
+    padding: 15px 0;
+    top: 60px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: none;
+}
+.lawliet_box dl {
+    float: left;
+    margin: 0 15px;
+}
+.lawliet_box dl dt a{
+    font-weight: bold;
+    color: #8e0c3a;
+    padding-bottom: 5px;
+}
+.lawliet_box dl dd {
+    margin: 4px 0;
+}
+.lawliet_box dl:nth-child(1) {
+    margin-left: 30px;
+}
+
+/*-----------------下拉框*/
+.ul_b {
+    box-shadow: 0 0 0 2px pink;
+    position: absolute;
+    width: 562px;
+    background: #FFF;
+    top: 32px;
+    z-index: 999;
+    display: none;
+}
+.ul_b li {
+    line-height: 27px;
+    text-indent: 15px;
+}
+.ul_b li:hover {
+    background: pink;
 }

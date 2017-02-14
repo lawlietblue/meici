@@ -1,4 +1,49 @@
 $(function(){
+    //上面的导航条
+    var iT;
+    $('.focusy').mouseover(function(){
+        clearTimeout(iT);
+        $('.focusme').css('display','block');
+    });
+    $('.focusy').mouseout(function(){
+        iT = setTimeout(function(){
+            $('.focusme').css('display','none');
+        },500);
+    });
+    //购物车
+    var it;
+    $('.buy').mouseover(function(){
+        clearTimeout(it);
+        $(this).css({
+            'background':'#fff',
+            'borderColor':'#ccc',
+            'border-bottom-color':'#FFF',
+        });
+        $('.buycar').css('display','block');
+    });
+    $('.buy').mouseout(function(){
+        it = setTimeout(function(){
+            $('.buy').css({
+                'background':'#f4f4f4',
+                'borderColor':'#f4f4f4',
+                'border-bottom-color':'#f4f4f4',
+            });
+            $('.buycar').css('display','none');
+        });
+    });
+    $('.buycar').mouseover(function(){
+        clearTimeout(it);
+    });
+    $('.buycar').mouseout(function(){
+         it = setTimeout(function(){
+             $('.buycar').css('display','none');
+            $('.buy').css({
+                'background':'#f4f4f4',
+                'borderColor':'#f4f4f4',
+                'border-bottom-color':'#f4f4f4'
+            });
+         });
+    });
     //搜索框
     var 
         inputS = $('.header_top :text');
@@ -127,9 +172,14 @@ $(function(){
             oInput.val('请填写您的E-mail');
         }
     });
+    var reg = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
     $('.nb_m button').click(function(){
         if(oInput.val() === '请填写您的E-mail'){
             alert('请填写您的E-mail~');
+        } else if(!oInput.val().match(reg)){
+            alert('请填写正确的E-mail地址！');
+        } else {
+            alert('订阅成功^。^~');
         }
     });
 

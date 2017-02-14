@@ -1,0 +1,67 @@
+#register  {
+    background: url(img/bg_main.jpg) no-repeat;
+    width: 960px;
+    height: 464px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 20px;
+}
+
+#register .absolute {
+    top: 27px;
+    left: 66px;
+    position: absolute;
+}
+#register form {
+    padding: 220px 0 0 104px;
+}
+form > p {
+    position: absolute;
+    top: 169px;
+    font-size: 17px;
+    color: #8e0c3a;
+    margin-left: 107px;
+}
+form em {
+    font-style: normal;
+    font-weight: bold;
+}
+form > label{
+    width: 65px;
+    height: 16px;
+    display: inline-block;
+    margin-bottom: 22px;
+    margin-right: 17px;
+}
+form > input{
+    width: 204px;
+    height: 20px;
+    outline: none;
+}
+form > div {
+    margin-left: 82px;
+}
+form #submit {
+    width: 204px;
+    height: 30px;
+    outline: none;
+    color: #FFF;
+    background: #8e0c3a;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+form div p{
+    padding-left: 130px;
+    margin-top: 5px;
+}
+form div p a {
+    color: #8e0c3a;
+}
+.warn {
+    color: #8e0c3a;
+}
+
+.headerbar_r.relative {
+    position: relative;
+}
