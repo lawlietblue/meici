@@ -27,6 +27,7 @@ $(function(){
 
     //set cookie
     if(getCookie('login')){
+        alert(1);
         $('.register_name').val(getCookie('login').name);
         $('.password').val(getCookie('login').password);
     }
