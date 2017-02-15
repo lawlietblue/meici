@@ -2,14 +2,16 @@
 <html>
     <head>
         <meta charset = "utf-8" />
-        <title>用户注册 - 奢侈品正品 Gucci 古奇, Prada 普拉达,  Burberry, 巴宝利, Miu miu 缪缪 Fendi 芬迪 时尚包包, 皮具, 钱包, 服饰等折扣特卖 - 美西时尚MEICI.COM</title>
+        <title>用户登录 - 奢侈品正品 Gucci 古奇, Prada 普拉达,  Burberry, 巴宝利, Miu miu 缪缪 Fendi 芬迪 时尚包包, 皮具, 钱包, 服饰等折扣特卖 - 美西时尚MEICI.COM</title>
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="../css/common.css" type="text/css" />
         <link rel="stylesheet" type="text/css" href="../css/font/iconfont.css">
         <link rel="stylesheet" href="register.css" type="text/css" />
+        <link rel="stylesheet" href="login.css" type="text/css" />
         <script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.js"></script>
         <script src="../js/common.js"></script>
-        <script src="register.js"></script>
+        <script src="cookie.js"></script>
+        <script src="login.js"></script>
     </head>
     <body>
         <div id="header">
@@ -66,17 +68,15 @@
         </div>
         <div id="register">
             <div class="absolute">
-                <img src="img/register_bg.png"/>
+                <img src="img/login_bg.png"/>
             </div>
             <form class="registerform" action="javascript:;">
-                <p>手机验证完成即送<em>888</em>元优惠券</p>
-                <label>手机/邮箱&nbsp;:</label><input class="register_name" type="text" value="手机注册更享好礼"/><br>
-                <label>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码&nbsp;:</label><input type="password" class="password"/><br>
-                <label>确认&nbsp;密码&nbsp;:</label><input type="password" class="confirm"/><br>
+                <label>手机/邮箱&nbsp;:</label><input class="register_name" type="text" value=""/><br>
+                <label>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码&nbsp;:</label><input type="password" class="password"/>
                 <div>
-                    <input type="checkbox" checked id="registermx"><label for="registermx">订阅美西时尚资讯</label><br>
-                    <input type="submit" value="注册" id="submit"/><br>
-                    <p>已注册？<a href="#">登陆</a></p>
+                    <input type="checkbox" checked id="registermx"><label for="registermx">下次自动登录</label><span><a href="#" class="forget">忘记密码？</a></span><br>
+                    <input type="submit" value="登陆" id="submit"/><br>
+                    <p><a href="register.html" class="gis">立即注册</a></p>
                     <span class="warn"></span>
                 </div>
             </form>
