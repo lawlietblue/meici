@@ -1,0 +1,97 @@
+.pay_m {
+    width: 960px;
+    margin: 10px auto;
+}
+.pay_title {
+    height: 30px;
+    line-height: 30px;
+    background: #eee;
+    border: 1px solid #eee;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    padding-left: 10px;
+    border:1px solid #ccc;
+}
+.orderbox > p {
+    padding: 18px 0 15px 25px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+.person_pay {
+    margin-left: 20px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+.person_pay th {
+    text-align: right;
+    padding: 5px 0;
+}
+.person_pay input {
+    border: 1px solid #bbb;
+    color: #6c6c6c;
+    height: 20px;
+    padding-left: 3px;
+    width: 130px;
+    line-height: 20px;
+}
+
+.give {
+    padding-left: 40px;
+    margin-top: 30px;
+}
+.giveto {
+    padding: 10px 0 0 60px;
+    margin-bottom: 30px;
+}
+.giveto input ,select{
+    border: 1px solid #bbb;
+    color: #6c6c6c;
+    height: 20px;
+    padding-left: 3px;
+    width: 130px;
+    line-height: 20px;
+}
+.giveto button {
+    width: 60px;
+    height: 22px;
+    background: #8e0c3a;
+    margin-left: 5px;
+    border: none;
+    outline: none;
+    color: #FFF;
+    cursor: pointer;
+}
+.orderbox {
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.tit > div {
+    padding-left: 40px;
+    color: #333;
+}
+.orderbox li {
+    padding:8px 0 8px 40px;
+}
+.orderbox ul {
+    margin-bottom: 30px;
+}
+.xxx {
+    vertical-align: top;
+    width: 730px;
+    height: 40px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    padding: 3px;
+
+}
+
+.paylist {
+    display: block;
+    margin-bottom: 30px;
+}
+.paylist button {
+    background: url(img/orderbtn.jpg) no-repeat;
+}

@@ -437,11 +437,11 @@ a:hover {
     right: 0;
     top: 35px;
     width: 275px;
-    padding: 30px 20px 27px 20px;
+    padding: 10px 20px 10px 20px;
     background: #FFF;
     border: 1px solid #ccc;
-    text-align: center;
     display: none;
+    z-index: 999;
 }
 
 /*清除浮动*/
@@ -557,4 +557,69 @@ a:hover {
 }
 .ul_b li:hover {
     background: pink;
+}
+
+
+/*------------------------------------------------*/
+.buycar h4 {
+    font-size: 12px;
+    color: black;
+    width: 310px;
+}
+
+.wantBuy div {
+    float: left;
+}
+.wantBuy div.buy_r {
+    float: right;
+}
+.wantBuy {
+    width: 100%;
+}
+.buy_l a {
+    float: left;
+    margin-right: 5px;
+}
+.headerbar .headerbar_r div.buy_l {
+    padding-left: 0;
+    padding: 10px 0;
+}
+.buy_l span {
+    color: #8E0C3A;
+}
+.buy_l {
+    width: 260px;
+}
+.headerbar .headerbar_r div.buy_r {
+    padding-left: 0;
+    line-height: 84px;
+}
+.wantBuy {
+    border-bottom: 1px solid #ccc;
+}
+.headerbar .headerbar_r div.wantBuy {
+    padding-left: 0;
+}
+
+.buy_r span {
+    cursor: pointer;
+}
+.buy_b {
+    line-height: 20px;
+    margin: 10px 0;
+    width: 100%;
+}
+.buy_b p a {
+    color: #FFF;
+    background: #8e0c3a;
+    float: right;
+    line-height: 20px;
+    text-align: center;
+    width: 84px;
+}
+.headerbar .headerbar_r div.h {
+    width: 100%;
+    padding-left: 0;
+    height: 260px;
+    overflow: hidden;
 }

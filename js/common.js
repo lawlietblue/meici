@@ -13,6 +13,19 @@ $(function(){
     //购物车
     var it;
     $('.buy').mouseover(function(){
+        if($.cookie('Goods')){
+            var buys = JSON.parse($.cookie('Goods'));
+            console.log(buys);
+            $('.buy .num').text(buys.length);
+            $('.buycar').html('');
+            var oDiv = $('<h4>最新加入的商品</h4><div class="h"></div><div class="buy_b"><p>商品总计 ：￥<span>11111</span><a href="end.html">现在就结算</a></p></div>');
+            $('.buycar').append(oDiv);
+            for(var i = 0;i < buys.length;i++){
+                var oP = '<div class="wantBuy"><div class="buy_l"><a href="#"><img src="'+ buys[i].url +'"></a><a href="#"><p>'+ buys[i].name +'</p><p>'+ buys[i].subname +'</p></a><span>￥'+ buys[i].price +'</span></div><div class="buy_r"><span>x</span></div></div>';
+                $('.buycar .h').prepend(oP);
+            }
+            $('.buy_b span').text(buys.length * buys[0].price);
+        }
         clearTimeout(it);
         $(this).css({
             'background':'#fff',
@@ -191,4 +204,10 @@ $(function(){
         $(this).css('background','#eee');
         $(this).children('a').css('color','#7A7A7A');
     });
+
+    //购物车找cookie
+    console.log($.cookie('Goods'));
+    if($.cookie('Goods')){
+        
+    }
 });
